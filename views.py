@@ -29,7 +29,7 @@ def r1edirect(request,id):
     return redirect(goal.long)
 
 def url_shortener():
-    characters = string.ascii_letters + string.digits  # You can customize this as needed
+    characters = string.ascii_letters + string.digits  # You can customize this
     random_string = ''.join(random.choice(characters) for _ in range(7))
     return 'WWW.ShortenedByLuka.com'+'/'+random_string
 def delete_note(request,id):
